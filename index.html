@@ -1,50 +1,212 @@
-<div class="mix tableau col-md-4 col-xs-6" data-myorder="30">
- <a href="new-york-city-parks.html" class="portfolio-box">
-    <img src="img/thumbs/nyc-parks.jpg" class="img-responsive" alt="New York City Parks">
-    <div class="portfolio-box-caption">
-      <div class="portfolio-box-caption-content">
-        <div class="project-category text-faded"></div>
-        <div class="project-name">New York City Parks</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spiros Vitas | Data Analytics &amp; Tableau Portfolio</title>
+  <meta name="description" content="Data Analytics &amp; BI portfolio — interactive Tableau dashboards covering operations, demographics, and workforce analytics.">
+
+  <!-- Core site styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/creative.min.css">
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+  <style>
+    :root {
+      --brand-dark: #14213d;
+      --brand-accent: #fca311;
+      --brand-accent-dark: #e08e00;
+      --brand-light: #f5f7fa;
+    }
+    #mainNav.navbar-default {
+      background-color: var(--brand-dark);
+      border-color: var(--brand-dark);
+    }
+    #mainNav .navbar-brand,
+    #mainNav .navbar-nav > li > a {
+      color: #ffffff;
+    }
+    #mainNav .navbar-nav > li > a:hover {
+      color: var(--brand-accent);
+    }
+    header.hero {
+      background-color: var(--brand-dark);
+      color: #ffffff;
+    }
+    header.hero .text-muted {
+      color: #c7cedd !important;
+    }
+    .btn-accent {
+      background-color: var(--brand-accent);
+      border-color: var(--brand-accent);
+      color: #14213d;
+      font-weight: bold;
+    }
+    .btn-accent:hover,
+    .btn-accent:focus {
+      background-color: var(--brand-accent-dark);
+      border-color: var(--brand-accent-dark);
+      color: #14213d;
+    }
+    section#projects {
+      background-color: #ffffff;
+    }
+    .project-category {
+      color: var(--brand-accent-dark);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+    .portfolio-box {
+      display: block;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .portfolio-box:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      transform: translateY(-3px);
+    }
+    section.bg-light {
+      background-color: var(--brand-light);
+    }
+    #contact a {
+      color: var(--brand-accent-dark);
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="index.html">Spiros Vitas</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </a>
-</div>
-<div class="mix tableau col-md-4 col-xs-6" data-myorder="32">
-  <a href="coal-terminal-maintenance-analysis.html" class="portfolio-box">
-    <img src="img/thumbs/coal-terminal.jpg" class="img-responsive" alt="Coal Terminal Maintenance Analysis">
-    <div class="portfolio-box-caption">
-      <div class="portfolio-box-caption-content">
-        <div class="project-category text-faded"></div>
-        <div class="project-name">Coal Terminal Maintenance Analysis</div>
+  </nav>
+
+  <!-- Header / hero -->
+  <header class="hero" style="margin-top:50px; padding:80px 20px 60px; text-align:center;">
+    <div class="container">
+      <h1 style="margin-bottom:10px;">Data Analytics &amp; BI Portfolio</h1>
+      <p class="text-muted" style="font-size:18px; max-width:700px; margin:0 auto 20px;">
+        Aspiring Data Analyst / Data Engineer with a Master's in Advanced Information
+        Systems and hands-on experience turning raw data into decision-ready
+        dashboards — using SQL, Python, and Tableau.
+      </p>
+      <a href="#projects" class="btn btn-accent btn-lg">View Projects</a>
+    </div>
+  </header>
+
+  <!-- Projects -->
+  <section id="projects" style="padding:40px 0 60px;">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom:40px;">Featured Dashboards</h2>
+      <div class="row">
+
+        <!-- New York City Parks -->
+        <div class="mix tableau col-md-4 col-xs-6" data-myorder="30">
+          <a href="new-york-city-parks.html" class="portfolio-box">
+            <img src="img/thumbs/nyc-parks.jpg" class="img-responsive" alt="New York City Parks">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">Public Data · Geospatial Analysis</div>
+                <div class="project-name">New York City Parks</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Coal Terminal Maintenance Analysis -->
+        <div class="mix tableau col-md-4 col-xs-6" data-myorder="32">
+          <a href="coal-terminal-maintenance-analysis.html" class="portfolio-box">
+            <img src="img/thumbs/coal-terminal.jpg" class="img-responsive" alt="Coal Terminal Maintenance Analysis">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">Operations · Maintenance Analytics</div>
+                <div class="project-name">Coal Terminal Maintenance Analysis</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- World Demographics -->
+        <div class="mix tableau col-md-4 col-xs-6" data-myorder="33">
+          <a href="world-demographics.html" class="portfolio-box">
+            <img src="img/thumbs/world-demographics.jpg" class="img-responsive" alt="World Demographics">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">Global Demographics · Comparative Analysis</div>
+                <div class="project-name">World Demographics</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Workforce Breakdown -->
+        <div class="mix tableau col-md-4 col-xs-6" data-myorder="34">
+          <a href="breakdown.html" class="portfolio-box">
+            <img src="img/thumbs/breakdown.jpg" class="img-responsive" alt="Breakdown between male and female employees">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">HR Analytics · Workforce Composition</div>
+                <div class="project-name">Male vs. Female Employee Breakdown</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
     </div>
-  </a>
-</div>
-<div class="mix tableau col-md-4 col-xs-6" data-myorder="33">
-  <a href="world-demographics.html" class="portfolio-box">
-    <img src="img/thumbs/world-demographics.jpg" class="img-responsive" alt="World Demographics">
-    <div class="portfolio-box-caption">
-      <div class="portfolio-box-caption-content">
-        <div class="project-category text-faded"></div>
-        <div class="project-name">World Demographics</div>
-      </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-light" style="padding:60px 0;">
+    <div class="container text-center">
+      <h2 style="margin-bottom:20px;">About</h2>
+      <p style="max-width:700px; margin:0 auto; font-size:16px;">
+        I hold a Master's in Advanced Information Systems from the University
+        of Piraeus and bring a background in warehouse operations management,
+        with hands-on skills in SQL, Python, R, Java, Tableau, and data
+        warehousing. These dashboards reflect my approach to data analysis:
+        turning raw datasets into clear, interactive tools that support
+        real decisions.
+      </p>
     </div>
-  </a>
-</div>
-<div class="mix tableau col-md-4 col-xs-6" data-myorder="33">
-  <a href="breakdown.html" class="portfolio-box">
-    <img src="img/thumbs/breakdown.jpg" class="img-responsive" alt="Breakdown">
-    <div class="portfolio-box-caption">
-      <div class="portfolio-box-caption-content">
-        <div class="project-category text-faded"></div>
-        <div class="project-name">A breakdown between male and female employees</div>
-      </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="padding:60px 0; text-align:center;">
+    <div class="container">
+      <h2 style="margin-bottom:20px;">Get in Touch</h2>
+      <p class="text-muted">
+        <!-- TODO: add your email / LinkedIn / GitHub links here -->
+        Email: your.email@example.com &nbsp;|&nbsp;
+        <a href="https://github.com/SpirosVitas" target="_blank">GitHub</a> &nbsp;|&nbsp;
+        <a href="#" target="_blank">LinkedIn</a>
+      </p>
     </div>
-  </a>
-</div>
+  </section>
 
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
 
-
-
-
-
+</html>
